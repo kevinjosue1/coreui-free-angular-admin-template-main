@@ -1,0 +1,40 @@
+<c-card>
+    <c-card-header>
+      <div class="left-section">
+        <c-avatar shape="rounded-1" [size]="'md'" src="../../../../../assets/images/avatars/1.jpg" status="success" textColor="primary"></c-avatar>
+        <div class="user-info">
+          <h5 class="user-name">Usuario</h5>
+          <span class="user-status">online</span>
+        </div>
+      </div>
+      <div class="icon-container">
+        <fa-icon [icon]="faMagnifyingGlass" class="fa-xl"></fa-icon>
+        <fa-icon [icon]="faPhone" class="fa-xl"></fa-icon>
+        <fa-icon [icon]="faVideo" class="fa-xl"></fa-icon>
+      </div>
+    </c-card-header>
+    <c-card-body>
+      <div class="message-container">
+        <div class="message user-message">
+          <p class="message-content">Este es un mensaje del usuario.</p>
+          <span class="message-time">12:34 PM</span>
+        </div>
+        <div class="message bot-message">
+          <p class="message-content">Este es un mensaje del bot.</p>
+          <span class="message-time">12:35 PM</span>
+        </div>
+      </div>
+    </c-card-body>
+    <c-card-footer>
+      <div class="left-icons">
+        <fa-icon [icon]="faEllipsis" class="fa-xl"></fa-icon>
+        <fa-icon [icon]="faFaceSmile" class="fa-xl"></fa-icon>
+      </div>
+      <input type="text" placeholder="Escriba su mensaje" class="form-control">
+      <div class="right-icons">
+        <fa-icon [icon]="faMicrophone" class="fa-xl"></fa-icon>
+        <fa-icon [icon]="faPaperPlane" class="fa-xl"></fa-icon>
+      </div>
+    </c-card-footer>
+  </c-card>
+  

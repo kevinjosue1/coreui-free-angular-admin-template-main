@@ -1,0 +1,46 @@
+<div class="sidebar" [class.collapsed]="isCollapsed">
+    <button class="toggle-button" (click)="toggleCollapse()">
+      <fa-icon *ngIf="isCollapsed" [icon]="faAngleRight" style="color: #74C0FC;"></fa-icon>
+      <fa-icon *ngIf="!isCollapsed" [icon]="faAngleLeft" style="color: #74C0FC;"></fa-icon>
+    </button>
+    <nav class="mt-1">
+        <ul class="sidebar-menu">
+            <div class="sidebar-item">
+                <li>
+                    <a routerLink="/home" routerLinkActive="active slidebar-link" #dashboardRla="routerLinkActive">
+                        <div class="icon-container">
+                           
+                        </div>
+                        <div class="title-container" *ngIf="!isCollapsed">
+                            <span class="slidebar-title">Home</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+              
+            <div class="sidebar-item">
+                <li>
+                    <a routerLink="/aiservices" routerLinkActive="active slidebar-link">
+                        <div class="icon-container">
+                        </div>
+                        <div class="title-container" *ngIf="!isCollapsed">
+                            <span class="slidebar-title">AI Services</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <!-- <div class="sidebar-item">
+                <li>
+                    <a routerLink="/chatpage" routerLinkActive="active slidebar-link">
+                        <div class="icon-container">
+                        </div>
+                        <div class="title-container" *ngIf="!isCollapsed">
+                            <span class="slidebar-title">ChatBot</span>
+                        </div>
+                    </a>
+                </li>
+            </div> -->
+
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,193 @@
+* {
+    font-family: Lato;
+    z-index: 9999; 
+}
+
+.toggle-button {
+    position: absolute;
+    right: -110px;
+    top: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.toggle-button fa-icon {
+    background-color: white;
+    border-color: #f7f7f7;
+    border-style: solid; 
+    border-width: 2px; 
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-button img {
+    width: 25px; /* Ajusta según el tamaño de tus imágenes */
+    height: 25px;
+}
+
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+
+.sidebar.collapsed .toggle-button {
+    right: -45px;
+}
+
+.sidebar:not(.collapsed) .toggle-button {
+    right: -110px; /* Hace que el botón sobresalga 20px */
+    top: 5%;/* O ajusta según prefieras cuando esté expandido */
+}
+
+nav {
+    padding-right: 20px;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 220px; /* Ajusta el ancho según tus necesidades */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    
+    transition: width 0.3s ease;
+    padding: 20px 10px; /* Añade padding para centrar el contenido */
+     /* Evita que el sidebar se reduzca en tamaño */
+}
+
+.sidebar.collapsed {
+    transition: width 0.3s ease;
+    width: 100px; /* Reducido para un colapso más compacto */
+}
+
+.sidebar button {
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; /* Centra los elementos horizontalmente */
+}
+
+.sidebar-item {
+    margin: 10px 0;
+    width: 100%; 
+}
+
+.sidebar-item a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto; 
+}
+.sidebar-item a:hover .slidebar-link.active {
+    color: #1d65f6;
+}
+
+.sidebar-item .slidebar-link.active .slidebar-title {
+    color: #1d65f6;
+}
+
+.icon-container, .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px; 
+}
+
+.slidebar-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slidebar-title {
+    font-size: 15px; 
+}
+
+.sidebar.collapsed .sidebar-item a {
+   // width: 54px; 
+    height: 45px; 
+    padding: 5px;
+    justify-content: center;
+}
+
+.sidebar.collapsed .icon-container {
+    margin-right: 0;
+}
+
+.sidebar.collapsed .title-container {
+    display: none;
+}
+
+.slidebar-link:hover, .slidebar-link.active {
+    background: var(--white-100, #FFF);
+}
+
+.sidebar.collapsed .iconCustom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sidebar.collapsed .iconPush{
+    width: 45px;
+}
+
+.sidebar.collapsed .iconIT{
+    width: 35px;
+}
+
+.iconCustom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+.sidebar .collapsed .vertical-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-icons{
+    margin-right: 3px;
+}
+
+.custom-hr{
+    height: 1.018px;
+}
+
+.hide {
+    display: none;
+}
+

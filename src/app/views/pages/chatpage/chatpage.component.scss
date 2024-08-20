@@ -1,0 +1,92 @@
+c-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .user-info .user-name {
+    margin-bottom: 5px;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  
+  ////////////////footer////////////////////
+  c-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .left-icons, .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input.form-control {
+    flex-grow: 1;
+    margin: 0 10px;
+    max-width: 100%;
+  }
+  
+  /////////////////////message/////////////////////
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%px;
+    margin: auto;
+  }
+  
+  .message {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    border: 2px solid #4caf50;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+  }
+  
+  .message-content {
+    margin: 0;
+  }
+  
+  .message-time {
+    font-size: 0.8em;
+    color: #7b7878;
+    position: absolute;
+    margin-top: 10px;
+    bottom: 5px;
+    right: 10px;
+    top: 17px;
+  }
+  

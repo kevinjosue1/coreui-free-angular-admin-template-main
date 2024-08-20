@@ -1,0 +1,51 @@
+:host {
+  .legend {
+    small {
+      font-size: x-small;
+    }
+  }
+
+  *{
+    font-family: 'lato', sans-serif;
+  }
+  
+  .section.hero {
+    padding: 50px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .hero-content {
+      max-width: 600px;
+  
+      .hero-title {
+        
+        font-size: 4.5rem;
+        font-weight: 900;
+        color: #333;
+      }
+  
+      .section-text {
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #666;
+      }
+    }
+  
+    .hero-banner {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+.imgStyle{
+  width: 100%;
+  height: 10%
+}
+  
+}
